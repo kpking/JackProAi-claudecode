@@ -1,10 +1,11 @@
-﻿# JackProAi-claudecode3.0（本地部署版，非官方）
+# JackProAi-claudecode3.1（本地部署版，非官方）
 
 > 基于 `2026-03-31` 泄露包与 Source Map 还原整理的 Claude Code 本地部署版本（非官方）。
 
 > 如需远程安装或定制功能，可加博主微信：`JACKPROAI`（注明来意，有偿）。
 
 [Read English Documentation](./README.md)
+[更新日志](./CHANGELOG.md)
 
 ## 免责声明
 - 本仓库**不是** Anthropic 官方发布版本。
@@ -30,8 +31,8 @@
 ## 快速开始（Windows）
 ```powershell
 # 从 GitHub 拉取
-git clone https://github.com/JackProAi/JackProAi-claudecode3.0.git
-cd JackProAi-claudecode3.0
+git clone https://github.com/JackProAi/JackProAi-claudecode3.1.git
+cd JackProAi-claudecode3.1
 
 # 首次执行脚本可能需要放开策略
 Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
@@ -141,7 +142,7 @@ macOS/Linux 可用：
 
 ## 项目结构
 ```text
-JackProAi-claudecode3.0
+JackProAi-claudecode3.1
 ├── claude-local
 ├── claude-local.ps1
 ├── start-claude-local.bat

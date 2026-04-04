@@ -1,10 +1,11 @@
-﻿# JackProAi-claudecode3.0 (Local Deployment Edition, Unofficial)
+# JackProAi-claudecode3.1 (Local Deployment Edition, Unofficial)
 
 > Unofficial local deployment build based on the leaked `2026-03-31` Claude Code package and restored source maps.
 
 > If you need remote installation or custom feature development, add the author on WeChat: `JACKPROAI` (state your purpose; paid service).
 
 [中文文档](./README.zh-CN.md)
+[Changelog](./CHANGELOG.md)
 
 ## Disclaimer
 - This repository is **not** an official Anthropic release.
@@ -30,8 +31,8 @@
 ## Quick Start (Windows)
 ```powershell
 # Clone from GitHub
-git clone https://github.com/JackProAi/JackProAi-claudecode3.0.git
-cd JackProAi-claudecode3.0
+git clone https://github.com/JackProAi/JackProAi-claudecode3.1.git
+cd JackProAi-claudecode3.1
 
 # If script execution is blocked, run once:
 Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
@@ -141,7 +142,7 @@ Common commands:
 
 ## Project Structure
 ```text
-JackProAi-claudecode3.0
+JackProAi-claudecode3.1
 ├── claude-local
 ├── claude-local.ps1
 ├── start-claude-local.bat

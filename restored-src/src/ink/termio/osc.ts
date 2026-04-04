@@ -211,9 +211,27 @@ function copyNative(text: string): void {
       return
     }
     case 'win32':
-      // clip.exe is always available on Windows. Unicode handling is
-      // imperfect (system locale encoding) but good enough for a fallback.
-      void execFileNoThrow('clip', [], opts)
+      // Use PowerShell with explicit UTF-8 decode so CJK text copied from
+      // the alt-screen selection doesn't mojibake on paste.
+      // Keep clip.exe as a best-effort fallback if Set-Clipboard fails.
+      void execFileNoThrow(
+        'powershell',
+        [
+          '-NoProfile',
+          '-NonInteractive',
+          '-Command',
+          '$b64=[Console]::In.ReadToEnd().Trim(); if($b64.Length -eq 0){exit 0}; $bytes=[Convert]::FromBase64String($b64); $text=[System.Text.Encoding]::UTF8.GetString($bytes); Set-Clipboard -Value $text',
+        ],
+        {
+          input: Buffer.from(text, 'utf8').toString('base64'),
+          useCwd: false,
+          timeout: 2000,
+        },
+      ).then(result => {
+        if (result.code !== 0) {
+          void execFileNoThrow('clip', [], opts)
+        }
+      })
       return
   }
 }
