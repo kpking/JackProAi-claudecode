@@ -2,11 +2,9 @@
 
 > 第三方本地部署兼容实现，用于兼容性测试与架构研究；由归档包文件和 Source Map 还原内容整理而成。
 
-> 如需远程安装或定制功能，可加博主微信：`JACKPROAI`（注明来意，有偿）。
+> 如需远程安装或定制功能，可加博主微信：<font color="#22c55e">JACKPROAI</font>（注明来意，有偿）。
 >
-> **抖音/B站/小红书：JACK的AI视界。公众号：JACK带你玩AI。**
->  
-> ![社媒入口（浅蓝）](./assets/social-links-lightblue.svg)
+> **抖音/B站/小红书：<font color="#22c55e">JACK的AI视界</font>。公众号：<font color="#22c55e">JACK带你玩AI</font>。**
 
 [Read English Documentation](./README.md)
 [更新日志](./CHANGELOG.md)
@@ -176,4 +174,4 @@ JackProAi-claudecode3.1
 - 脚本默认启用 `CLAUDE_CODE_NO_FLICKER=1`，用于减少终端重绘闪烁问题。
 - 如终端出现乱码或异常，优先使用 `start-claude-local.bat` 或 `start-claude-local.ps1` 启动。
 - 请勿将本项目包装、宣传或发布为“官方版本”。
-- 如需远程安装或定制功能，可加博主微信：`JACKPROAI`（注明来意，有偿）。
+- 如需远程安装或定制功能，可加博主微信：<font color="#22c55e">JACKPROAI</font>（注明来意，有偿）。
